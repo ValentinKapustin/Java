@@ -30,23 +30,23 @@ public class Fraction {
     	
     	if (k==1)
     	{
-    		System.out.print(name+"(Ñîêð. äðîáü): "+n+"/"+d+"; ");
+    		System.out.print(name+"(Сокр. дробь): "+n+"/"+d+"; ");
     	}
     }
 
     public Fraction mul(Fraction x)
     {
-    	return new Fraction(n*x.n, d*x.d, "Óìíîæåíèå");
+    	return new Fraction(n*x.n, d*x.d, "Умножение");
     }
     
     public Fraction div(Fraction x)
     {
-    	return new Fraction(n*x.d, d*x.n, "Äåëåíèå");
+    	return new Fraction(n*x.d, d*x.n, "Деление");
     }
     
     public Fraction add(Fraction x)
     {
-    	name="Ñëîæåíèå";
+    	name="Сложение";
     	if (d==x.d)
     	{
     		return new Fraction(n+x.n, d, name);
@@ -69,7 +69,7 @@ public class Fraction {
     
     public Fraction sub(Fraction x)
     {
-    	name="Âû÷èòàíèå";
+    	name="Вычитание";
     	if (d==x.d)
     	{
     		return new Fraction(n-x.n, d, name);
